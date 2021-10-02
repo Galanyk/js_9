@@ -1,0 +1,26 @@
+.item-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 800px;
+    align-items: center;
+}
+
+.item-tabl {
+    width: 33%;
+}
+
+.container {
+    width: 900px;
+    text-align: center;
+}
+
+.container-input {
+    display: flex;
+}
+
+.input {
+    margin-right: 10px;
+    padding-right: 10px;
+}
