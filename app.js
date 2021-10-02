@@ -7,6 +7,7 @@ const tableEl = document.querySelector('#table');
 const containerEl = document.createElement('div');
 tableEl.appendChild(containerEl);
 containerEl.classList.add('item-wrapper');
+
 btnEl.addEventListener("click", onClick);
 
 function onClick() {
@@ -14,7 +15,9 @@ function onClick() {
     const dataLastName = inputLastNameEl.value.trim();
     const dataPhone = inputPhoneEl.value.trim();
 
-    if (isValueNameString(dataName) && isValueNameString(dataLastName) && isValuePhoneNumber(dataPhone)) {
+    if (isValueNameString(dataName) &&
+        isValueNameString(dataLastName) &&
+        isValuePhoneNumber(dataPhone)) {
         createElement(dataName, containerEl, 'div', 'item-tabl');
         createElement(dataLastName, containerEl, 'div', 'item-tabl');
         createElement(dataPhone, containerEl, 'div', 'item-tabl');
